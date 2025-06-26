@@ -14,3 +14,5 @@ ADMIN_ID = int(os.getenv("ADMIN_ID"))
 
 YONOTE_TOKEN = os.getenv("YONOTE_TOKEN")
 YONOTE_DOMAIN = os.getenv("YONOTE_DOMAIN")
+collectionUrlId = os.getenv("collectionUrlId")
+parentDocumentUrlId = os.getenv("parentDocumentUrlId")

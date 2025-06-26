@@ -31,10 +31,10 @@ async def messages(msg: Message):
     tags = ", ".join(list(map(lambda x: f"**#{x}**", tags.split(", "))))
 
     create_doc = await api.create_document(
-        collectionUrlId="tftofsJza5",
+        collectionUrlId=cfg.collectionUrlId,
         title=title,
         text=f"{tags}\n\n{content}",
-        parentDocumentUrlId="qhsKXsBo82",
+        parentDocumentUrlId=cfg.parentDocumentUrlId,
         publish=True
     )
 
